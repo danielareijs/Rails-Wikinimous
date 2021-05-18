@@ -1,0 +1,33 @@
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap');
+
+
+.color-darkblue {
+  color: #2d71ad;
+}
+
+.nav-links {
+  color: rgb(120,120,120);
+}
+
+.nav-links:hover {
+  text-decoration: none;
+  color: rgb(90,90,90);
+}
+
+.nav-links:first-child {
+  font-size: 18px;
+}
+
+.nav-links:last-child {
+  font-size: 14px;
+}
+
+.icon-links {
+  color: #2d71ad;
+}
+
+.icon-links:hover {
+  color: #1e517a;
+}
+

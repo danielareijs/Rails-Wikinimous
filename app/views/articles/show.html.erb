@@ -1,0 +1,15 @@
+<% flash.each do |type, msg| %>
+  <div class="alert alert-info">
+    <%= msg %>
+  </div>
+<% end %>
+<div class="d-flex border-bottom p-3 justify-content-between">
+  <h1><%= @article.title.capitalize %></h1>
+  <h3>
+    <%= link_to '<i class="far fa-edit"></i>'.html_safe, edit_article_path(@article), class: 'icon-links' %>
+    <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, article_path(@article), method: :delete, data: { confirm: "Are you sure?"}, class: "icon-links" %>
+  </h3>
+</div>
+<div class="pt-3">
+  <p><%= @article.content.capitalize %></p>
+</div>

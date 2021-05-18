@@ -1,0 +1,15 @@
+<% flash.each do |type, msg| %>
+  <div class="alert alert-info">
+    <%= msg %>
+  </div>
+<% end %>
+<ul class="list-group list-group-flush text-decoration-none">
+  <% @articles.each do |article| %>
+    <li class="list-group-item">
+      <div>
+        <h2><%= link_to article.title.capitalize, article_path(article), class: 'color-darkblue' %></h2>
+        <p><%= article.content.capitalize %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>

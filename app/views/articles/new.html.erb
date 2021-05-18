@@ -1,0 +1,8 @@
+<% flash.each do |type, msg| %>
+  <div class="alert alert-warning">
+    <%= msg %>
+  </div>
+<% end %>
+<h1>New Article</h1>
+<%= render "form", article: @article %>
+<%= link_to "Back", articles_path %>
